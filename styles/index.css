@@ -1,0 +1,66 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+main #title {
+  font-size: var(--font-size-main-title);
+  line-height: var(--font-size-main-title);
+  font-weight: 600;
+  text-align: center;
+}
+
+figure {
+  width: 80vw;
+  margin: 4rem 0 3rem 0;
+}
+
+figure img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+figure figcaption {
+  font-size: var(--font-size-details);
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+main > h2 {
+  font-size: var(--font-size-title);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+main > ul {
+  margin: 1.5rem 0 3rem 0;
+  width: 50vw;
+}
+
+main > ul li + li {
+  margin-top: 10px;
+}
+
+main > ul li > span {
+  font-weight: 600;
+}
+
+main > p {
+  font-size: var(--font-size-subtitle);
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  figure {
+    width: 90vw;
+  }
+
+  main > ul {
+    width: 70vw;
+  }
+}
